@@ -1,50 +1,40 @@
-# Welcome to your Expo app 👋
-
+Light Automation IoT App
+A React Native mobile application designed for IoT light automation. This app allows users to control and monitor their lights remotely with a very simplistic interface.
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+Features
+🏡 Control IoT-enabled lights remotely.
+📡 Real-time status updates from IoT devices.
+📱 Cross-platform support (iOS and Android).
+⚡ Built with Expo for rapid development and deployment.
 
-1. Install dependencies
+Technologies Used
+React Native: For creating a robust and responsive mobile interface.
+Expo: To streamline development and provide easy access for collaborators.
+ESP32: For IoT hardware communication (replace if your IoT device differs).
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Setup and Installation
+1. Prerequisites
+Ensure you have the following installed on your machine:
+Expo CLI (npm install -g expo-cli)
+A mobile device with the Expo Go App.
+2. Clone the Repository
+git clone https://github.com/hugo-mp3/lightIOT-ReactNative-Expo-App.git
+cd light-automation-iot-app
+3. Install Dependencies
+npm install
+4. Configure Environment Variables
+Create a .env file in the root directory and add the necessary variables (e.g., IoT device IP, API keys):
+EXPO_PUBLIC_ESP32_IP=192.168.1.10
+5. Start the Development Server
+Run the app locally:
+npx expo start
+Scan the QR code using the Expo Go app on your mobile device to preview the app.
+Publishing the App
+Using Expo
+Log in to Expo:
+npx expo login
+Publish the app:
+eas update
+The app will be available at the following URL:
+https://expo.dev/accounts/yourusername/projects/light-automation-iot-app/updates
